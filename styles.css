@@ -1,0 +1,105 @@
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: url("https://graduate.northeastern.edu/resources/wp-content/uploads/sites/4/2022/01/what-does-a-pharmacist-do.jpg") no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color:#ffffff;
+  padding: 2rem 0;
+  font-size: 1.1rem;
+}
+
+#title, #description {
+  text-align: center;
+  color: white;
+  text-shadow: 0 0 5px #1b1b32;
+}
+
+#title {
+  margin: 1em 0 0
+}
+
+#description {
+  font-style: italic;
+  margin: 0 0 2rem 0;
+}
+
+#survey-form {
+  min-width: 300px;
+  max-width: 650px;
+  width: 60vw;
+  background: #1b1b32dc;
+  margin: 0 auto;
+  padding: 2em;
+  font-size: 1.2rem;
+}
+
+fieldset {
+  margin: 1em 0;
+  border: none;
+}
+
+fieldset:first-of-type, fieldset:last-of-type{
+  margin: unset;
+} 
+
+#name, #email, #number, textarea{
+  width: 97%;
+  min-height: 2em;
+  margin: 0.5em 0 1em 0;
+  border-radius: 5px;
+  padding: 0 10px;
+  font-size: 1.1rem;
+  border: none;
+  outline: none;
+}
+
+
+
+#name:focus, #email:focus, #number:focus, textarea:focus, #name:active, #email:active, #number:active, textarea:active {
+  outline: none;
+  border: 2px solid blue;
+}
+
+#recommendations {
+  margin-bottom: 0;
+  padding: 12px 10px;
+}
+
+#dropdown {
+  width: 100%;
+  min-height: 2em;
+  margin: 0.5em 0 2em 0;
+  border-radius: 5px;
+  padding: 0 5px;
+  font-size: 1.1rem;
+  color: grey;
+  outline: none;
+}
+
+#dropdown:active, #dropdown:focus {
+  outline: none;
+  border: 2px solid blue;
+}
+
+label {
+  display: block;
+  margin: 0.5em 0;
+}
+
+input[type="checkbox"] {
+  vertical-align: middle;
+}
+
+#submit {
+  display: block;
+  width: 96.5%;
+  height: 2.5em;
+  margin: 0 auto;
+  border-radius: 2px;
+  background: #1bb11b;
+  color: #ffffff;
+  font-size: 1.1rem;
+}

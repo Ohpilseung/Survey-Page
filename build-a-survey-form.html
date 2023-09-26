@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <title>pharmacom-survey-form</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="styles.css" 
+    </head>
+    <body>
+      <h1 id="title" >URI Pharma Survey Form</h1>
+      <p id="description"> Your responses would help us improve our services. Please be sincere as possible.</p>
+      <form id="survey-form">
+        <fieldset id="fieldset1">
+          <label id="name-label" for="name">Name<input type="text" id="name" placeholder="Enter your name" required> </label>
+          <label id="email-label" for="email">Email <input type="email" id="email" placeholder="Enter your email" required> </label>
+          <label id="number-label" for="number">Age <input type="number" id="number" min="10" max="120" placeholder="Age" required> </label>
+          <label for="dropdown">What best describes your status currently?
+            <select id="dropdown">
+              <option value="n/a">Select status</option>
+              <option value="student" >Student</option>
+              <option value="employed">Employed</option>
+              <option value="unemployed">Unemployed</option>
+              <option value="other">Other</option>
+            </select>
+          </label>
+        </fieldset>
+        <fieldset>
+          <legend>
+            Which of our staff would you prefer to attend to you?
+          </legend>
+          <label for="charles"><input id= "charles" type="radio" name="preferred-staff" value="charles"> Dr. Charles Osei Mensah</label>
+          <label for="vic"><input id="vic" type="radio" name="preferred-staff" value="vic" > Victoria Osei-Tutu</label>
+          <label for="serwaa"><input id="serwaa" "charles" type="radio" name="preferred-staff" value="vic" > Constance Serwaa Mensah</label>
+        </fieldset>
+        <fieldset>
+          <legend>Which of these services would you want us to improve?  
+          </legend>
+          <label for="privacy"><input type="checkbox" id="privacy" value="privacy" name="service-to-improve" > Patient's privacy
+          </label>
+          <label for="instructions-&-counselling"><input type="checkbox" id="instructions-&-counselling" value="instructions&counselling" name="service-to-improve"> Dosage instructions and counselling
+          </label>
+          <label for="customer-care"><input type="checkbox" id="customer-care" value="customer-care" name="service-to-improve"> Customer care service
+          </label>
+          <label for="clinical-services"><input type="checkbox" id="clinical-services" value="clinical-services" name="service-to-improve"> Clinical services
+          </label>
+        </fieldset>  
+        <fieldset>
+          <legend>Which of these would you want us to add to our catalogue of services?
+          </legend>
+          <label for="hep-b-test"><input type="checkbox" id="hep-b-test" value="hep-b-test" name="service-to-add"> Hepatitis B testing
+          </label> 
+          <label for="typhoid-test"><input type="checkbox" id="typhoid-test" value="typhoid-test" name="service-to-add"> Typhoid testing
+          </label>
+          <label for="flu-shot"><input type="checkbox" id="flu-shot" value="flu-shot" name="service-to-add"> Flu injections
+          </label>  
+        </fieldset>
+        <fieldset>
+          <label for="recommendations">
+           Any additional recommendations or suggestions? <textarea rows="4" cols="40" id="recommendations" name="recommendations" placeholder="Enter your recommendations here"></textarea>
+          </label>
+        </fieldset>
+        <input type="submit" id="submit">
+      </form>
+    </body>
+  </html>
+
+
+
+
